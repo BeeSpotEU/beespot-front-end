@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,6 +18,36 @@
   color: white;
 }
 
+.App-menu{
+  position: absolute;
+  display: block;
+  min-height: 100vh;
+  width: 250px;
+  background-color: grey;
+}
+.App-menu ul li{
+  list-style-image: none;
+  display: block;
+  color: #fff;
+  text-align: left;
+  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+  width: 100%;
+}
+
+
+.mapboxgl-canvas{
+  left: 200px;
+}
+
+/*.App-content{
+  position: absolute;
+  left: 100px;
+  width: 100vw;
+}
+*/
 .App-link {
   color: #61dafb;
 }
@@ -30,3 +60,4 @@
     transform: rotate(360deg);
   }
 }
+
