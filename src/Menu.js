@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PaymentForm from './PaymentForm';
+
 
 class Menu extends Component {
   constructor(props)
@@ -14,6 +16,7 @@ class Menu extends Component {
           <li><a href="#">How it works</a></li>
           <li><p><input type="range" min="70" max="120" value={this.zoom} onChange={(e) =>this.props.setZoomLevel(e.target.value/10)}/></p></li>
         </ul>
+        <PaymentForm />
       </div>
     );
   }
