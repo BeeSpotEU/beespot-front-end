@@ -4,7 +4,8 @@ class Header extends Component {
   render() {
     return (
       <div className="App-header">
-        Bee Spot
+        <img src={this.props.logo}></img>
+        <span>Bee Spot</span>
       </div>
     );
   }

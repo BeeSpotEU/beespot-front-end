@@ -15,7 +15,7 @@ class MapContainer extends Component {
   fillColorByTime(time) {
       return {
       "property": "n" + ((Math.round(time) % 12) + 1) ,
-      "stops": [[0, "#fff"], [100.0, "#0f0"]]
+      "stops": [[0, "#fff"], [50.0, "#0f0"]]
     }; 
   }
   startAnimation = (map) => {

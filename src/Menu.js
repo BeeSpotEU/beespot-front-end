@@ -10,9 +10,9 @@ class Menu extends Component {
     return (
       <div className="App-menu">
         <ul>
-          <li>Location</li>
-          <li>How it works</li>
-          <li><input type="range" min="70" max="120" value={this.zoom} onChange={(e) =>this.props.setZoomLevel(e.target.value/10)}/></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><p><input type="range" min="70" max="120" value={this.zoom} onChange={(e) =>this.props.setZoomLevel(e.target.value/10)}/></p></li>
         </ul>
       </div>
     );

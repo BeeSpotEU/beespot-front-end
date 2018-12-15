@@ -8,14 +8,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #F5A623;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+.App-header img{
+  width: 80px;
 }
 
 .App-menu{
@@ -23,19 +26,33 @@
   display: block;
   min-height: 100vh;
   width: 250px;
-  background-color: grey;
+  background-color: #eee;
+  padding: 0;
+  margin:0;
+  overflow: hidden;
 }
-.App-menu ul li{
-  list-style-image: none;
+.App-menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+}
+.App-menu ul li a, .App-menu ul li p{
   display: block;
-  color: #fff;
+  color: #000;
   text-align: left;
   height: 40px;
-  padding-top: 10px;
+  padding: 10px;
+  padding-top: 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #666;
   width: 100%;
+  text-decoration: none;
 }
+
+.App-menu ul li a:hover{
+  background-color: #ddd;
+}
+
 .mapboxgl-map{
   left: 200px;
 }
