@@ -61,7 +61,7 @@ class App extends Component {
         />
         {this.state.averages ? (
           <div className="charts">
-            <Graph y={this.state.averages.n} />
+            <Graph y={this.state.averages.n} p={this.state.averages.p} />
           </div>
         ) : (
           undefined
