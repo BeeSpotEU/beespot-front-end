@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import logo from './img/BeeSpotLogo.svg';
 import './App.css';
 import Header from './Header';
@@ -19,7 +20,7 @@ class Landing extends Component {
       <Header logo={logo}></Header>
         <div className="hero">
           <h1>Make more healthy bees</h1>
-          <a href="#">Show me where</a>
+          <Link to="/app">Show me where</Link>
         </div>
         <div className="map">
           <Map style={json} 

@@ -7,6 +7,8 @@ const AppRouter = () => (
   <Router>
     <div>
       <Route path="/" exact component={Landing} />
+      <Route path="/app" component={App} />
+
     </div>
   </Router>
 );
