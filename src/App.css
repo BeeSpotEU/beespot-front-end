@@ -36,10 +36,12 @@
   border-bottom: 1px solid #666;
   width: 100%;
 }
-
+.mapboxgl-map{
+  left: 200px;
+}
 
 .mapboxgl-canvas{
-  left: 200px;
+  left: 0;
 }
 
 /*.App-content{

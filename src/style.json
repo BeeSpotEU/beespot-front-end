@@ -1388,8 +1388,8 @@
           "maxzoom": 13,
             "filter": ["has", "n1"],
             "paint": {
-                "fill-color": "#999",
-                "fill-opacity": 0.4
+                "fill-color": "#eee",
+                "fill-opacity": 0.8
             }
         },
 
@@ -1397,16 +1397,13 @@
         {
             "id": "zones-line2",
           "minzoom": 13,
-            "type": "line",
+            "type": "fill",
             "source": "beespot3",
             "source-layer": "food4beesLevel3",
             "filter": ["has", "n1"],
             "paint": {
-                "line-color": "#999",
-        "line-width": {
-          "base": 2,
-          "stops": [[15, 2], [20, 2]]
-        }
+                "fill-color": "#eee",
+                "fill-opacity": 1
             }
         },
 
