@@ -14,14 +14,17 @@ class Menu extends Component {
         <ul>
           <li><a href="#">Location</a></li>
           <li><a href="#">How it works</a></li>
-          <li>
+          <li className="menu-item">
+            Show:
             <select name="data_type" value={this.props.dataType} onChange={(e) => this.props.setDataType(e.target.value)}>
               <option value="pollen">Pollen</option>
               <option value="nectar">Nectar</option>
             </select>
           </li>
+          <li className="menu-item">
+            <PaymentForm/>
+          </li>
         </ul>
-        <PaymentForm />
       </div>
     );
   }
