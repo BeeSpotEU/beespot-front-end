@@ -8,7 +8,7 @@ import MapContainer from './MapContainer';
 class App extends Component {
   state = {
       zoom: 9,
-      dataType: 'both',
+      dataType: 'nectar',
   };
   setZoomLevel = (zoom) => {this.setState({zoom})};
   setDataType = (dataType) => {this.setState({dataType})};
@@ -23,7 +23,10 @@ class App extends Component {
             setZoomLevel={this.setZoomLevel}
             setDataType={this.setDataType}
         />
-        <MapContainer zoom={this.state.zoom}></MapContainer>
+        <MapContainer
+            zoom={this.state.zoom}
+            dataType={this.state.dataType}
+        />
       </div>
     );
   }

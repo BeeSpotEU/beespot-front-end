@@ -13,8 +13,9 @@ class MapContainer extends Component {
     this.time = 0;
   }
   fillColorByTime(time) {
+      const prefix = this.props.dataType === 'pollen' ? 'p' : 'n';
       return {
-      "property": "n" + ((Math.round(time) % 12) + 1) ,
+      "property": prefix + ((Math.round(time) % 12) + 1) ,
       "stops": [[0, "#fff"], [100.0, "#0f0"]]
     }; 
   }
