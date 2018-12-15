@@ -121,3 +121,7 @@
   }
 }
 
+.menu-item {
+  text-align: left;
+  padding: 30px 10px;
+}
