@@ -30,7 +30,7 @@ class MapContainer extends Component {
     return (
       <Map style={json} 
       center={[5,52]}
-      zoom={this.props.zoom}
+      zoom={[this.props.zoom]}
       containerStyle={{
       height: "100vh",
       width: "100vw"}}
