@@ -14,6 +14,12 @@ class Menu extends Component {
         <ul>
           <li><a href="#">Location</a></li>
           <li><a href="#">How it works</a></li>
+          <li>
+            <select name="data_type" value={this.props.dataType} onChange={(e) => this.props.setDataType(e.target.value)}>
+              <option value="pollen">Pollen</option>
+              <option value="nectar">Nectar</option>
+            </select>
+          </li>
         </ul>
         <PaymentForm />
       </div>

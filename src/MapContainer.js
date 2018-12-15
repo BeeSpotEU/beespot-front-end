@@ -13,8 +13,9 @@ class MapContainer extends Component {
     this.time = 0;
   }
   fillColorByTime(time) {
+      const prefix = this.props.dataType === 'pollen' ? 'p' : 'n';
       return {
-      "property": "n" + ((Math.round(time) % 12) + 1) ,
+      "property": prefix + ((Math.round(time) % 12) + 1) ,
       "stops": [[0, "#fff"], [50.0, "#0f0"]]
     }; 
   }
@@ -30,7 +31,7 @@ class MapContainer extends Component {
     return (
       <Map style={json} 
       center={[5,52]}
-      zoom={this.props.zoom}
+      zoom={[this.props.zoom]}
       containerStyle={{
       height: "100vh",
       width: "100vw"}}
