@@ -12,3 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.charts {
+  z-index: 9999;
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
